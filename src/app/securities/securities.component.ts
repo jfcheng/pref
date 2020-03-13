@@ -14,9 +14,15 @@ export class SecuritiesComponent implements OnInit {
 
   security = this.securities[0];
 
+  selectedSecurity: Security;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSelect(security: Security): void {
+    this.selectedSecurity = security;  
   }
 
 }

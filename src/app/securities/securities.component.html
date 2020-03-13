@@ -1,6 +1,16 @@
-<h2>Preferred Shares</h2>
-<ul class="heroes">
-  <li>
-    <span class="badge">{{security.id}}</span> {{security.companyTicker}}
-  </li>
-</ul>
+
+<li *ngFor="let security of securities" (click)="onSelect(security)">
+  <span>{{security.id}}</span>
+</li>
+
+<div *ngIf="selectedSecurity">
+
+  <h2>{{selectedSecurity.companyTicker | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedSecurity.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedSecurity.companyTicker" placeholder="companyTicker"/>
+    </label>
+  </div>
+
+</div>
