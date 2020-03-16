@@ -1,0 +1,18 @@
+<p>security-detail works!</p>
+
+<div *ngIf="security">
+
+	<h2>{{security.companyTicker | uppercase}} Details</h2>
+	<div><span>ticker: </span>{{security.ticker}}</div>
+	<div>
+		<label>company Ticker:
+			<input [(ngModel)]="security.companyTicker" placeholder="companyTicker"/>
+		</label>
+	</div>
+
+	<div>
+		<label>series Ticker:
+			<input [(ngModel)]="security.seriesTicker" placeholder="companyTicker"/>
+		</label>
+	</div>
+</div>
