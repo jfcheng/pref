@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StocksComponent } from './stocks/stocks.component';
 import { SecuritiesComponent } from './securities/securities.component';
+import { SecurityDetailComponent } from './security-detail/security-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StocksComponent,
-    SecuritiesComponent
+    SecuritiesComponent,
+    SecurityDetailComponent
   ],
   imports: [
     BrowserModule,
